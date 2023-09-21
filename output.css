@@ -534,16 +534,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -556,10 +552,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-1\/4 {
@@ -584,10 +576,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-screen {
@@ -844,6 +832,10 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:columns-2 {
     -moz-columns: 2;
          columns: 2;
