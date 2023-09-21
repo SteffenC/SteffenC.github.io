@@ -18,5 +18,8 @@
   "homepage": "https://github.com/SteffenC/SteffenC.github.io#readme",
   "dependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "tailwindcss-bg-patterns": "^0.2.0"
   }
 }
