@@ -542,10 +542,6 @@ video {
   position: fixed;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -832,10 +828,6 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -843,8 +835,8 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
+  .lg\:visible {
+    visibility: visible;
   }
 
   .lg\:columns-2 {
@@ -854,8 +846,8 @@ h1 {
 }
 
 @media (min-width: 1280px) {
-  .xl\:block {
-    display: block;
+  .xl\:visible {
+    visibility: visible;
   }
 
   .xl\:columns-4 {
@@ -865,8 +857,8 @@ h1 {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:block {
-    display: block;
+  .\32xl\:visible {
+    visibility: visible;
   }
 
   .\32xl\:columns-4 {
