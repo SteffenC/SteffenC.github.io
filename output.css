@@ -558,6 +558,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-1\/4 {
   height: 25%;
 }
@@ -847,6 +851,10 @@ h1 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -854,6 +862,10 @@ h1 {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:columns-4 {
     -moz-columns: 4;
          columns: 4;
@@ -861,6 +873,10 @@ h1 {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:block {
+    display: block;
+  }
+
   .\32xl\:columns-4 {
     -moz-columns: 4;
          columns: 4;
