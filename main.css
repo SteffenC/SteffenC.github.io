@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    font-family: 'Ubuntu';
+}
+
+h1 {
+    font-weight: 600;
+}
