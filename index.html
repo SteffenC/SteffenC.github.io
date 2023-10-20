@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Hotjar Tracking Code for https://releese.dk -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -54,49 +56,48 @@
     <!-- End of Statcounter Code -->
   </head>
   <body>
-    <div class="bg-gradient-to-b from-slate-300 to-slate-100 h-full w-full md:p-0 lg:p-0 xl:p-0 2xl:p-o">
+    <div class="h-full w-full md:p-0 lg:p-0 xl:p-0 2xl:p-o">
       <div
-        class="fixed w-full flex pl-12 pr-12 h-14 justify-between items-center "
+        class="md:fixed lg:fixed xl:fixed 2xl:fixed w-full flex pl-12 pr-12 h-14 justify-between items-center bg-slate-900"
       >
-        <h1 class="text-3xl text-slate-900 tracking-wider select-none">
+        <h1 class="text-3xl text-slate-100 tracking-wider select-none">
           releese
         </h1>
 
         <div class="lg:visible xl:visible 2xl:visible invisible">
           <a
-            href="#tilgang"
-            class="pr-6 text-xl text-slate-900 tracking-wider hover:text-slate-500"
-            >vores tilgang</a
-          >
-          <a
-            href="#samarbejde"
-            class="pr-6 text-xl text-slate-900 tracking-wider hover:text-slate-500"
-            >samarbejde</a
-          >
-
-          <a
             href="mailto:hey@releese.dk"
-            class="text-xl text-slate-900 tracking-wider hover:text-slate-500"
-            >kontakt</a
+            class="pr-6 text-xl text-slate-100 tracking-wider hover:text-slate-300"
+            >hey@releese.dk</a
           >
         </div>
       </div>
 
-      <div class="w-full min-h-screen">
+      <div class="w-full h-screen bg-gradient-to-b from-slate-900 to-slate-800">
         <div class="w-full h-1/4"></div>
-        <div class="flex">
+
+        <div class="block xl:hidden 2xl:hidden">
+          <span
+            class="w-20 h-20 absolute left-1/3 ml-0 opacity-90 bg-emerald-400 top-20"
+          ></span>
+          <span
+            class="w-20 h-20 absolute left-1/3 opacity-80 ml-8 mt-8 bg-emerald-200 top-20"
+          ></span>
+        </div>
+
+        <div class="flex mb-20">
           <div class="w-1/6 h-10"></div>
           <div class="">
             <h2
-              class="z-20 md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-3xl font-medium max-w-[600px] leading-normal text-slate-800"
+              class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-3xl font-medium max-w-[600px] leading-normal text-slate-100"
             >
               Kom i mål med dine it-projekter
             </h2>
-            <p class="text-xl font-medium text-slate-900 mt-4">
+            <p class="text-xl font-medium text-slate-100 mt-4">
               Få en software- og webudvikler fra releese til at bygge din
               it-løsning
             </p>
-            <p class="text-l font-light text-slate-900 max-w-[700px] mt-2">
+            <p class="text-l font-light text-slate-100 max-w-[700px] mt-2">
               Vi kan hjælpe dig og din virksomhed igennem hele processen fra idé
               til færdigt produkt. Sammen beskriver, designer og bygger vi den
               løsning der passer til netop jeres behov.
@@ -104,262 +105,293 @@
             <div class="mt-12">
               <a
                 href="mailto:hey@releese.dk"
-                class="bg-transparent jusitfy-end hover:bg-slate-700 text-slate-700 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded"
+                class="bg-transparent jusitfy-end hover:bg-emerald-400 text-emerald-400 font-semibold hover:text-slate-100 py-2 px-4 border border-emerald-200 hover:border-transparent rounded"
               >
                 Kontakt os
               </a>
             </div>
           </div>
-        </div>
 
-        <div
-          class="flex justify-center md:visible lg:visible xl:visible 2xl:visible invisible"
-        >
-          <a
-            onclick="document.getElementById('tilgang').scrollIntoView({ behavior: 'smooth' })"
-            class="absolute bottom-1 text-sm bg-transparent jusitfy-end hover:bg-slate-700 text-slate-700 hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded"
-          >
-            Læs mere
-          </a>
+          <span class="hidden xl:block 2xl:block">
+            <span
+              class="w-64 h-64 absolute left-2/3 opacity-90 bg-emerald-400"
+            ></span>
+            <span
+              class="w-64 h-64 absolute left-2/3 opacity-80 ml-20 mt-20 bg-emerald-200"
+            ></span>
+          </span>
         </div>
       </div>
 
-
-      <div class="flex bg-slate-100">
+      <div class="flex relative invisible xl:visible 2xl:visible">
         <div class="w-1/6"></div>
-        <div class="pb-28">
-          <h1
-            id="tilgang"
-            class="md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-3xl leading-normal font-medium pt-32"
-          >
-            Vores tilgang
-          </h1>
-          <p class="text-l font-light text-slate-900 max-w-[700px]">
-            Med erfaring fra både start-ups og nogle af landets største
-            virksomheder, har vi dannet 4 overordnet trin til at sammen kunne
-            sikre jeres it-success. Men vigtigst af alt, er vores arbejdsmetode
-            som danner rammen for samarbejdet.
-          </p>
-        </div>
-      </div>
-      <div class="w-full pb-56 flex justify-center bg-slate-100 text-center">
-        <div class="2xl:columns-4 xl:columns-4 lg:columns-2 md:columns-2 gap-3">
-          <div class="w-72 shadow-lg bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h1 class="text-slate-100 text-left pt-2 pl-4 text-xl">1.</h1>
-              <h2 class="text-orange-300 text-left pl-4 pb-2 text-3xl">
-                Kravsanalyse
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Før vi kan begynde udviklingsprocessen, skal vi sammen beskrive
-                de forventede krav og funktionaliteter så vi kommer bedst muligt
-                fra start.
-              </p>
-            </div>
+        <div class="bg-slate-800">
+          <span
+            class="h-48 w-96 bg-emerald-400 absolute left-1/6 top-[20px]"
+          ></span>
+          <span class="h-4 w-96 bg-sky-700 absolute left-1/6 top-[200]"></span>
 
-            <div class="p-4 pt-2">
-              <p class="text-left">1-4 uger</p>
-              <p class="text-left text-xs">Typisk varighed</p>
-            </div>
-          </div>
-
-          <div class="w-72 shadow-lg mt-12 bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h1 class="text-slate-100 text-left pt-2 pl-4 text-xl">2.</h1>
-              <h2 class="text-orange-300 text-left pl-4 pb-2 text-3xl">
-                Udarbejdelse
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Vi starter udviklingen og vil følge velkendte agile principper,
-                som sikrer at I altid har overblik over den nuværende status.
-                Dette sikrer en tæt dialog med demoer, feedback og mulighed for
-                at justere målet hvis behovet opstår.
-              </p>
-            </div>
-
-            <div class="p-4 pt-2">
-              <p class="text-left">3-12 måneder</p>
-              <p class="text-left text-xs">Typisk varighed</p>
-            </div>
-          </div>
-
-          <div class="w-72 shadow-lg mt-12 bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h1 class="text-slate-100 text-left pt-2 pl-4 text-xl">3.</h1>
-              <h2 class="text-orange-300 text-left pl-4 pb-2 text-3xl">Test</h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                På trods af den løbende test der sker under udarbejdelse af
-                jeres løsning, vil der ofte være behov for en selvstændig
-                test-fase når produktet nærmer sig slutmålet.
-              </p>
-            </div>
-            <div class="p-4 pt-2">
-              <p class="text-left">2-8 uger</p>
-              <p class="text-left text-xs">Typisk varighed</p>
-            </div>
-          </div>
-
-          <div class="w-72 shadow-lg mt-12 bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h1 class="text-slate-100 text-left pt-2 pl-4 text-xl">4.</h1>
-              <h2 class="text-orange-300 text-left pl-4 pb-2 text-3xl">
-                Udgivelse og Drift
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Løsningen er nu klar til at komme i brug. Alt efter løsningens
-                karakterer kan der være forskellige behov såsom eksterne
-                godkendelser og datamigreringer. Derudover laver vi sammen en
-                plan for den fremtidige drift eller videreudvikling af
-                løsningen.
-              </p>
-            </div>
-            <div class="p-4 pt-2">
-              <p class="text-left">2-6 uger</p>
-              <p class="text-left text-xs">Typisk varighed</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex bg-slate-100">
-        <div class="w-1/6"></div>
-        <div class="pb-28">
           <h1
             id="samarbejde"
-            class="md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-3xl leading-normal font-medium"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[168px]"
           >
-            Samarbejde
+            Website
           </h1>
-          <p class="text-l font-light text-slate-900 max-w-[700px]">
-            releese arbejder efter processer basseret på agile principper og
-            bruger vores mange års praktisk erfaring til at tilegne
-            fremgangsmåden til jeres konkrete opgave. Vi kan imødekomme og
-            integrere i jeres nuværende arbejdsmetoder, eller vi kan styre
-            processen og sikre forankring, transparens, deltagelse og feedback
-            under hele forløbet. Her er nogle af de tiltag vi anbefaler.
+        </div>
+
+        <span>
+          <p
+            class="text-xl font-medium text-slate-100 mt-4 max-w-[700px] absolute left-1/6 ml-[400px] top-[70px]"
+          >
+            Web apps og hjemmesider dækker over en bred vifte af løsninger. Alt
+            fra webshops, kampagne- og informations websites til mere avancerede
+            og skrædersyede administration og CMS systemer. Her kan vi både
+            integrere op i mod jeres eksisterende data og systemer eller sammen
+            bygge de nødvendige server og database systemer.
           </p>
-        </div>
-      </div>
+        </span>
 
-      <div class="w-full pb-56 flex justify-center bg-slate-100 text-center">
-        <div class="2xl:columns-4 xl:columns-4 md:columns-2 lg:columns-2 gap-3">
-          <div class="w-72 shadow-lg bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h2 class="text-orange-300 text-left pt-2 pl-4 pb-2 text-3xl">
-                Mange brikker - ét spil
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Små detajler bliver hurtigt overset når man beskriver de store
-                mål med it-løsninger. Derfor vil vi altid nedbryde projekter til
-                konkrete arbejdsopgaver.
-              </p>
-            </div>
+        <div class="bg-slate-800">
+          <span class="h-48 w-96 bg-purple-900 absolute left-1/6 top-80"></span>
+          <span
+            class="h-4 w-96 bg-orange-700 absolute left-1/6 top-[500px]"
+          ></span>
 
-            <div class="p-4 pt-2">
-              <p class="text-left">En del af kravsanalysen</p>
-              <p class="text-left text-xs">Ved start og efter behov</p>
-            </div>
-          </div>
-
-          <div class="w-72 mt-12 shadow-lg bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h2 class="text-orange-300 text-left pt-2 pl-4 pb-2 text-3xl">
-                Check-ins
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Vi anbefaler et dagligt check-in mellem udviklerne og
-                forretningsejeren. Det giver mulighed for hurtigere afklaring og
-                nemmere planlægning.
-              </p>
-            </div>
-
-            <div class="p-4 pt-2">
-              <p class="text-left">5-10 minutter</p>
-              <p class="text-left text-xs">Hver dag</p>
-            </div>
-          </div>
-
-          <div class="w-72 mt-12 shadow-lg bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h2 class="text-orange-300 text-left pt-2 pl-4 pb-2 text-3xl">
-                14. dags planlægning
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Omstændigheder ændrer sig ofte. Derfor laver vi altid kun en
-                detaljeret plan for 14 dage af gangen. Dette skaber
-                fleksibilitet og tillader en mere dybdegående dialog.
-              </p>
-            </div>
-
-            <div class="p-4 pt-2">
-              <p class="text-left">45-90 minutter</p>
-              <p class="text-left text-xs">Hver 14. dag</p>
-            </div>
-          </div>
-
-          <div class="w-72 mt-12 shadow-lg bg-slate-100">
-            <div class="bg-slate-700 rounded-t-md">
-              <h2 class="text-orange-300 text-left pt-2 pl-4 pb-2 text-3xl">
-                Demo
-              </h2>
-            </div>
-            <div class="p-4 pt-2 bg-slate-700">
-              <p class="text-left text-slate-100">
-                Selvom alle interessenter naturligvis vil have mulighed for at
-                teste og se løsningen i takt med udarbejdelsen, så anbefaler vi
-                en fælles demo af de nuværende fremskridt.
-              </p>
-            </div>
-
-            <div class="p-4 pt-2">
-              <p class="text-left">45-90 minutter</p>
-              <p class="text-left text-xs">Hver 30. dag</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex bg-slate-100">
-        <div class="w-1/6"></div>
-        <div class="pb-28">
           <h1
             id="samarbejde"
-            class="md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-3xl leading-normal font-medium"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[468px]"
+          >
+            App
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-xl font-medium text-slate-100 mt-4 max-w-[700px] absolute left-1/6 ml-[400px] top-[390px]"
+          >
+            Vi kan hjælpe dig og din virksomhed med udvikling af mobil apps til
+            både iOS og Android. Vi benytter os som oftest af såkaldte
+            "cross-platform" teknologier, som gør det muligt for os at bygge til
+            begge systemer samtidigt. Dermed kan vi hurtigere få appen ud til
+            dine brugere.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <span
+            class="h-48 w-96 bg-yellow-400 absolute left-1/6 top-[620px]"
+          ></span>
+          <span
+            class="h-4 w-96 bg-rose-700 absolute left-1/6 top-[800px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[768px]"
+          >
+            Backend
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-xl font-medium text-slate-100 mt-4 max-w-[700px] absolute left-1/6 ml-[400px] top-[720px]"
+          >
+            Hos releese har vi stor erfaring med at bygge komplekse
+            domæne-specifkke systemer til alt fra ordrehåndtering og CMS/BSS til
+            API'er der skal bruges til integrationer mellem systemer.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <span
+            class="h-48 w-96 bg-pink-400 absolute left-1/6 top-[920px]"
+          ></span>
+          <span
+            class="h-4 w-96 bg-sky-700 absolute left-1/6 top-[1100px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[1068px]"
+          >
+            Cloud
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-xl font-medium text-slate-100 mt-4 max-w-[700px] absolute left-1/6 ml-[400px] top-[1020px]"
+          >
+            Hos releese har vi hjulpet virksomheder på tværs af brancher med at
+            opbygge deres it-infrastruktur ved hjælp af cloud computing. Vi har
+            et pragmatisk tilgang som sikrer, at vedligehold og budget ikke
+            stikker af.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[1350px]"
           >
             Interesseret ?
           </h1>
-          <p class="text-l font-light text-slate-900 max-w-[700px]">
+        </div>
+
+        <span>
+          <p
+            class="text-xl font-medium text-slate-100 mt-4 absolute left-1/6 top-[1450px] max-w-[700px]"
+          >
             Vi tager glædeligt og gratis en snak om jeres behov og hvad vi kan
             tilbyde. Hos os er der ingen sælgere eller rekrutteringsfolk - du
             vil altid komme i direkte dialog med en it-konsulent med erfaring
             med projektledelse.
           </p>
-          <div class="pt-12 pb-12">
-            <a
-              href="mailto:hey@releese.dk"
-              class="bg-transparent jusitfy-end hover:bg-slate-700 text-slate-700 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded"
-            >
-              hey@releese.dk
-            </a>
-          </div>
-        </div>
+
+          <a
+            href="mailto:hey@releese.dk"
+            class="text-xl font-extrabold tracking-wider hover:text-emerald-200 absolute top-[1600px] text-emerald-500"
+            >hey@releese.dk</a
+          >
+        </span>
       </div>
+
+      <!-- Mobile content -->
+
+      <div class="flex relative visible xl:invisible 2xl:invisible bg-red-900">
+        <div class="w-1/6"></div>
+        <div class="bg-slate-800">
+          <span
+            class="h-72 w-full left-0 bg-emerald-400 opacity-25 absolute top-[20px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-2 -top-[35px]"
+          >
+            Website
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-l font-light text-slate-100 mt-4 absolute left-1/6 top-[60px]"
+          >
+            Web apps og hjemmesider dækker over en bred vifte af løsninger. Alt
+            fra webshops, kampagne- og informations websites til mere avancerede
+            og skrædersyede administration og CMS systemer. Her kan vi både
+            integrere op i mod jeres eksisterende data og systemer eller sammen
+            bygge de nødvendige server og database systemer.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <span
+            class="h-72 w-full left-0 bg-purple-900 opacity-50 absolute top-[320px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-2 top-[275px]"
+          >
+            App
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-l font-light text-slate-100 mt-4 absolute left-1/6 top-[370px]"
+          >
+            Vi kan hjælpe dig og din virksomhed med udvikling af mobil apps til
+            både iOS og Android. Vi benytter os som oftest af såkaldte
+            "cross-platform" teknologier, som gør det muligt for os at bygge til
+            begge systemer samtidigt. Dermed kan vi hurtigere få appen ud til
+            dine brugere.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <span
+            class="h-72 w-full left-0 bg-rose-700 opacity-50 absolute left-1/6 top-[620px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-2 top-[575px]"
+          >
+            Backend
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-l font-light text-slate-100 mt-4 absolute left-1/6 top-[670px]"
+          >
+            Hos releese har vi stor erfaring med at bygge komplekse
+            domæne-specifkke systemer til alt fra ordrehåndtering og CMS/BSS til
+            API'er der skal bruges til integrationer mellem systemer.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <span
+            class="h-72 w-full bg-pink-400 opacity-50 absolute left-0 top-[920px]"
+          ></span>
+
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-7xl leading-normal font-medium text-slate-100 absolute left-2 top-[875px]"
+          >
+            Cloud
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-l font-light text-slate-100 mt-4 absolute left-1/6 top-[970px]"
+          >
+            Hos releese har vi hjulpet virksomheder på tværs af brancher med at
+            opbygge deres it-infrastruktur ved hjælp af cloud computing. Vi har
+            et pragmatisk tilgang som sikrer, at vedligehold og budget ikke
+            stikker af.
+          </p>
+        </span>
+
+        <div class="bg-slate-800">
+          <h1
+            id="samarbejde"
+            class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-5xl leading-normal font-medium text-slate-100 absolute left-1/6 top-[1250px]"
+          >
+            Interesseret ?
+          </h1>
+        </div>
+
+        <span>
+          <p
+            class="text-l font-light text-slate-100 mt-4 absolute left-1/6 top-[1350px] "
+          >
+            Vi tager glædeligt og gratis en snak om jeres behov og hvad vi kan
+            tilbyde. Hos os er der ingen sælgere eller rekrutteringsfolk - du
+            vil altid komme i direkte dialog med en it-konsulent med erfaring
+            med projektledelse.
+          </p>
+
+          <a
+            href="mailto:hey@releese.dk"
+            class="text-xl font-extrabold tracking-wider hover:text-emerald-200 absolute top-[1550px] text-emerald-500"
+            >hey@releese.dk</a
+          >
+        </span>
+      </div>
+
+      <div class="h-[2000px] bg-slate-800"></div>
 
       <div class="w-full h-7 bg-slate-900"></div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
