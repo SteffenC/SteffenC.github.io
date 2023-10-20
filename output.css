@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -570,8 +566,8 @@ video {
   left: 0px;
 }
 
-.left-1\/3 {
-  left: 33.333333%;
+.left-1\/2 {
+  left: 50%;
 }
 
 .left-2 {
@@ -614,8 +610,8 @@ video {
   top: 1450px;
 }
 
-.top-\[1550px\] {
-  top: 1550px;
+.top-\[1500px\] {
+  top: 1500px;
 }
 
 .top-\[1600px\] {
@@ -634,8 +630,8 @@ video {
   top: 20px;
 }
 
-.top-\[275px\] {
-  top: 275px;
+.top-\[260px\] {
+  top: 260px;
 }
 
 .top-\[320px\] {
@@ -658,8 +654,8 @@ video {
   top: 500px;
 }
 
-.top-\[575px\] {
-  top: 575px;
+.top-\[560px\] {
+  top: 560px;
 }
 
 .top-\[60px\] {
@@ -690,8 +686,8 @@ video {
   top: 800px;
 }
 
-.top-\[875px\] {
-  top: 875px;
+.top-\[860px\] {
+  top: 860px;
 }
 
 .top-\[920px\] {
@@ -706,12 +702,16 @@ video {
   z-index: 20;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.-ml-\[3vh\] {
+  margin-left: -3vh;
 }
 
-.ml-0 {
-  margin-left: 0px;
+.-ml-\[6vh\] {
+  margin-left: -6vh;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .ml-20 {
@@ -770,8 +770,8 @@ video {
   height: 3.5rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-32 {
+  height: 8rem;
 }
 
 .h-4 {
@@ -794,8 +794,12 @@ video {
   height: 18rem;
 }
 
-.h-\[2000px\] {
-  height: 2000px;
+.h-\[12vh\] {
+  height: 12vh;
+}
+
+.h-\[1700px\] {
+  height: 1700px;
 }
 
 .h-full {
@@ -814,8 +818,8 @@ video {
   width: 16.666667%;
 }
 
-.w-20 {
-  width: 5rem;
+.w-32 {
+  width: 8rem;
 }
 
 .w-64 {
@@ -828,6 +832,10 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[12vh\] {
+  width: 12vh;
 }
 
 .w-full {
@@ -1051,8 +1059,8 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1242,6 +1250,18 @@ h1 {
     position: fixed;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -1267,16 +1287,16 @@ h1 {
     visibility: visible;
   }
 
-  .xl\:invisible {
-    visibility: hidden;
-  }
-
   .xl\:fixed {
     position: fixed;
   }
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:hidden {
@@ -1308,16 +1328,16 @@ h1 {
     visibility: visible;
   }
 
-  .\32xl\:invisible {
-    visibility: hidden;
-  }
-
   .\32xl\:fixed {
     position: fixed;
   }
 
   .\32xl\:block {
     display: block;
+  }
+
+  .\32xl\:flex {
+    display: flex;
   }
 
   .\32xl\:hidden {
