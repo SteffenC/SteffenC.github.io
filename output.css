@@ -702,8 +702,8 @@ video {
   z-index: 20;
 }
 
-.-ml-\[3vh\] {
-  margin-left: -3vh;
+.-ml-\[2vh\] {
+  margin-left: -2vh;
 }
 
 .-ml-\[6vh\] {
@@ -714,16 +714,20 @@ video {
   margin-bottom: 5rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .ml-\[400px\] {
   margin-left: 400px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
