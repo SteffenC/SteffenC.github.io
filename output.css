@@ -670,10 +670,6 @@ video {
   top: 670px;
 }
 
-.top-\[70px\] {
-  top: 70px;
-}
-
 .top-\[720px\] {
   top: 720px;
 }
@@ -692,6 +688,10 @@ video {
 
 .top-\[920px\] {
   top: 920px;
+}
+
+.top-\[92px\] {
+  top: 92px;
 }
 
 .top-\[970px\] {
@@ -1071,6 +1071,11 @@ video {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
