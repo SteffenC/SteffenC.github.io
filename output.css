@@ -558,10 +558,6 @@ video {
   top: -35px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-1 {
   bottom: 0.25rem;
 }
@@ -832,6 +828,10 @@ video {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-32 {
@@ -1410,6 +1410,14 @@ h1 {
     position: fixed;
   }
 
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:bottom-0 {
+    bottom: 0px;
+  }
+
   .lg\:mr-24 {
     margin-right: 6rem;
   }
@@ -1432,6 +1440,10 @@ h1 {
 
   .lg\:h-14 {
     height: 3.5rem;
+  }
+
+  .lg\:h-32 {
+    height: 8rem;
   }
 
   .lg\:columns-2 {
@@ -1463,6 +1475,14 @@ h1 {
     position: fixed;
   }
 
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:bottom-0 {
+    bottom: 0px;
+  }
+
   .xl\:mr-24 {
     margin-right: 6rem;
   }
@@ -1481,6 +1501,10 @@ h1 {
 
   .xl\:h-14 {
     height: 3.5rem;
+  }
+
+  .xl\:h-32 {
+    height: 8rem;
   }
 
   .xl\:columns-4 {
@@ -1516,6 +1540,14 @@ h1 {
     position: fixed;
   }
 
+  .\32xl\:absolute {
+    position: absolute;
+  }
+
+  .\32xl\:bottom-0 {
+    bottom: 0px;
+  }
+
   .\32xl\:mr-24 {
     margin-right: 6rem;
   }
@@ -1538,6 +1570,10 @@ h1 {
 
   .\32xl\:h-14 {
     height: 3.5rem;
+  }
+
+  .\32xl\:h-32 {
+    height: 8rem;
   }
 
   .\32xl\:columns-4 {
