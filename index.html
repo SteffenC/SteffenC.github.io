@@ -109,29 +109,21 @@
         </div>
       </div>
 
-      <div class="w-full h-5/6 bg-gradient-to-b">
-        <img class="h-5/6 w-full opacity-90 absolute" src="img/office.jpg" />
-        <div class="w-full h-1/4"></div>
+      <div class="w-full lg:h-5/6 h-1/3 xl:h-5/6 2xl:h-5/6 bg-white">
+        <img class="h-5/6 w-full opacity-60 hidden absolute lg:block xl:block 2xl:block" src="img/office.jpg" />
+        <img class="w-full h-1/3  absolute lg:hidden xl:hidden 2xl:hidden" src="img/office.jpg" />
+        <div class="w-full md:h-1/4 lg:h-1/4 xl:h-1/4 2xl:h-1/4"></div>
 
-        <div class="block lg:hidden xl:hidden 2xl:hidden">
-          <span
-            class="w-[12vh] h-[12vh] absolute left-1/2 -ml-[6vh] opacity-90 bg-emerald-400 top-20"
-          ></span>
-          <span
-            class="w-[12vh] h-[12vh] absolute left-1/2 -ml-[2vh] opacity-80 mt-8 bg-emerald-200 top-20"
-          ></span>
-        </div>
-
-        <div class="flex mb-20">
-          <div class="lg:w-1/6 xl:w-1/6 2xl:w-1/6 h-10"></div>
+        <div class="flex h-1/3">
+          <div class="lg:w-1/6 xl:w-1/6 2xl:w-1/6"></div>
           <div class="z-20">
             <h2
-              class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-3xl font-medium max-w-[600px] leading-normal text-slate-100 bg-slate-900 p-4 opacity-90"
+              class="md:text-7xl font-medium max-w-[600px] leading-normal text-white lg:text-7xl xl:text-7xl 2xl:text-7xl text-4xl bg-slate-900 p-4 opacity-90"
             >
               Kom i mål med dine it-projekter
             </h2>
             <p
-              class="text-xl font-medium text-slate-100 lg:mt-4 xl:mt-4 2xl:mt-4 bg-slate-900 p-4 opacity-90"
+              class="text-xl font-medium text-white lg:mt-4 xl:mt-4 2xl:mt-4 bg-slate-900 p-4 opacity-90"
             >
               Få en software-, mobil-, eller webudvikler fra releese til at
               bygge din it-løsning
@@ -165,6 +157,7 @@
             ></span>
           </span>
         </div>
+
       </div>
 
       <div
@@ -179,9 +172,9 @@
           </h1>
 
           <p
-            class="text-xl xl:text-3xl 2xl:text-3xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
+            class="text-xl xl:text-3xl 2xl:text-3xl font-medium leading-relaxed text-slate-900 tracking-wide select-none px-4"
           >
-            releese er en mindre it-konsulent virksomhed med freelancheudviklere
+            releese er en mindre it-konsulent virksomhed med freelanceudviklere
             der brænder for at skabe værdi igennem software
           </p>
         </div>
@@ -398,6 +391,49 @@
                 data-menu
                 class="flex justify-between items-center cursor-pointer"
               >
+                <h1 class="text-xl font-regular tracking-wide">React Native</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    Tesla, Facebook og Instagram er blot nogle af de store
+                    app-udbydere som har satset på React Native som teknologien
+                    bag deres mobile apps. Ligeledes benytter releese sig ofte
+                    af denne teknologi, da den gør det muligt at skrive koden én
+                    gang og udgive til både iPhones og Android smartphones.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
                 <h1 class="text-xl font-regular tracking-wide">Vue.js</h1>
                 <button
                   class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
@@ -517,7 +553,7 @@
                   <p class="pt-2">
                     Udover egenudviklede systemer, er mange af de store cloud
                     e-commerce løsninger basseret på PHP og vi hjælper derfor
-                    gerne med videreudvikling af bla.a woocommer, wordpress og
+                    gerne med videreudvikling af bla.a woocommerce, wordpress og
                     de fleste andre udbydere.
                   </p>
                 </div>
@@ -735,8 +771,8 @@
         <p>
           Løsningen er nu klar til at komme i brug. Alt efter løsningens
           karakterer kan der være forskellige behov såsom eksterne godkendelser
-          og datamigreringer. Derudover laver vi sammen en plan for den
-          fremtidige drift eller videreudvikling af løsningen.
+          eller datamigreringer. Derudover laver vi sammen en plan for den
+          fremtidige drift og videreudvikling af løsningen.
         </p>
       </div>
     </div>
@@ -817,7 +853,7 @@
           <p>
             Vi anbefaler et dagligt check-in mellem udviklerne og
             forretningsejeren. Det giver mulighed for hurtigere afklaring og
-            nemmere planlægning.
+            nemmere planlægning. Det kan naturligvis foregå remote eller endda via chat-statusopdateringer
           </p>
         </div>
 
@@ -859,8 +895,13 @@
       id="kontakt"
       class="px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1"
     >
-      <img src="img/developer.jpg" class="lg:rounded-l-2xl xl:rounded-l-2xl 2xl:rounded-l-2xl" />
-      <div class="leading-loose bg-slate-200 pl-12 pt-12 lg:rounded-r-2xl xl:rounded-r-2xl 2xl:rounded-r-2xl pb-12">
+      <img
+        src="img/developer.jpg"
+        class="lg:rounded-l-2xl xl:rounded-l-2xl 2xl:rounded-l-2xl"
+      />
+      <div
+        class="leading-loose pr-4 md:pl-0 lg:pl-12 xl:pl-12 2xl:pl-12 pt-12 lg:rounded-r-2xl xl:rounded-r-2xl 2xl:rounded-r-2xl pb-12"
+      >
         <h1 class="text-xl font-regular tracking-wide">
           Klar til at komme i gang?
         </h1>
@@ -874,7 +915,7 @@
 
         <a
           href="mailto:hey@releese.dk"
-          class="text-xl tracking-wider hover:text-slate-300 mt-12 border-b-2 border-white"
+          class="text-xl tracking-wider hover:text-slate-300 mt-12"
           >hey@releese.dk</a
         >
       </div>
