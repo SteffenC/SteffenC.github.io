@@ -67,34 +67,42 @@
         </h1>
 
         <div class="flex">
-          <div class="lg:visible xl:visible 2xl:visible invisible">
+          <div class="lg:block xl:block 2xl:block hidden">
             <a
               onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
               >Services</a
             >
           </div>
 
-          <div class="lg:visible xl:visible 2xl:visible invisible">
+          <div class="lg:block xl:block 2xl:block hidden">
+            <a
+              onclick="document.getElementById('teknologier').scrollIntoView({ behavior: 'smooth' })"
+              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              >Teknologier</a
+            >
+          </div>
+
+          <div class="lg:block xl:block 2xl:block hidden">
             <a
               onclick="document.getElementById('tilgang').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
               >Tilgang</a
             >
           </div>
 
-          <div class="lg:visible xl:visible 2xl:visible invisible">
+          <div class="lg:block xl:block 2xl:block hidden">
             <a
               onclick="document.getElementById('samarbejde').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
               >Samarbejde</a
             >
           </div>
 
-          <div class="lg:visible xl:visible 2xl:visible invisible">
+          <div class="lg:block xl:block 2xl:block hidden">
             <a
               onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-6 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              class="pr-6 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
               >Kontakt</a
             >
           </div>
@@ -115,7 +123,7 @@
         </div>
 
         <div class="flex mb-20">
-          <div class="w-1/6 h-10"></div>
+          <div class="lg:w-1/6 xl:w-1/6 2xl:w-1/6 h-10"></div>
           <div class="z-20">
             <h2
               class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-3xl font-medium max-w-[600px] leading-normal text-slate-100 bg-slate-900 p-4 opacity-90"
@@ -123,7 +131,7 @@
               Kom i mål med dine it-projekter
             </h2>
             <p
-              class="text-xl font-medium text-slate-100 mt-4 bg-slate-900 p-4 opacity-90"
+              class="text-xl font-medium text-slate-100 lg:mt-4 xl:mt-4 2xl:mt-4 bg-slate-900 p-4 opacity-90"
             >
               Få en software-, mobil-, eller webudvikler fra releese til at
               bygge din it-løsning
@@ -173,9 +181,8 @@
           <p
             class="text-xl xl:text-3xl 2xl:text-3xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
           >
-            Vi kan hjælpe dig og din virksomhed igennem hele processen fra idé
-            til færdigt produkt. Sammen beskriver og bygger vi den løsning der
-            passer til netop jeres behov.
+            releese er en mindre it-konsulent virksomhed med freelancheudviklere
+            der brænder for at skabe værdi igennem software
           </p>
         </div>
       </div>
@@ -184,7 +191,7 @@
     <div
       class="grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
     >
-      <div class="leading-loose">
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
         <h1 class="text-xl font-regular tracking-wide">
           Forretningsapplikationer
         </h1>
@@ -198,7 +205,7 @@
         </p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
         <h1 class="text-xl font-regular tracking-wide">iOS/Android Apps</h1>
         <div class="bg-black h-0.5 w-12 my-4"></div>
         <p>
@@ -210,7 +217,7 @@
         </p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
         <h1 class="text-xl font-regular tracking-wide">
           Websites & E-commerce
         </h1>
@@ -225,7 +232,7 @@
         </p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
         <h1 class="text-xl font-regular tracking-wide">
           API'er & Integrationer
         </h1>
@@ -239,7 +246,7 @@
         </p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
         <h1 class="text-xl font-regular tracking-wide">
           Dashboard & Data visualiseringer
         </h1>
@@ -251,21 +258,412 @@
         </p>
       </div>
 
-      <div class="leading-loose">
-        <h1 class="text-xl font-regular tracking-wide">Drift & Vedligehold</h1>
+      <div class="leading-loose bg-slate-100 hover:bg-slate-200 p-4 rounded">
+        <h1 class="text-xl font-regular tracking-wide">Drift & Hosting</h1>
         <div class="bg-black h-0.5 w-12 my-4"></div>
         <p>
           Hvad end vi sammen har bygget din nye it-løsning eller du søger nogen
-          der kan overtage ansvaret for vedligeholdelse, drift og support af
+          der kan overtage ansvaret for vedligeholdelse, drift og hosting af
           dine eksisterende løsninger; så hjælper releese gerne så vi sammen
           finder en holdbar løsning.
+        </p>
+      </div>
+
+      <div class="leading-loose bg-emerald-100 hover:bg-emerald-200 p-4">
+        <h1 class="text-xl font-regular tracking-wide">
+          Øvrige udviklingsopgaver
+        </h1>
+        <div class="bg-black h-0.5 w-12 my-4"></div>
+        <p>
+          Falder jeres opgaver en smule udenfor vores kategorier, så tøv ikke
+          med at tag kontakt til os alligevel. Vi brænder for softwareudvikling,
+          og vil naturligvis altid være klar til at imødekomme jeres behov.
         </p>
       </div>
     </div>
 
     <div
+      id="teknologier"
+      class="leading-loose self-center grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 lg:gap-12 xl:gap-12 2xl:gap-12 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
+    >
+      <div class="col-span-3 pt-12 flex-col flex">
+        <div class="text-left max-w-[1200px] pb-12">
+          <h1
+            class="text-xl font-regular text-black tracking-wider select-none pb-12"
+          >
+            t e k n o l o g i e r
+          </h1>
+
+          <p
+            class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
+          >
+            releese har kompetencer indenfor langt de fleste programmeringssprog
+            og frameworks. Her er blot nogle af de hyppigst benyttede
+            teknologier.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gab-8">
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">.Net</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    releese har benyttet .Net frameworket til adskillige
+                    forretningsapplikationer samt API'er på tværs af brancher.
+                    Vi har erfaring i både .Net Core samt .Net Framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">
+                  Java & Groovy
+                </h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    Vi har stor erfaring med både legacy samt nye
+                    server-applikationer programmeret i Java og Groovy. Uanset
+                    om der skal moderniseres, tilføjes nye funktionaliteter til
+                    eksisterende platforme eller opbygges helt nye services så
+                    er releese klar på opgaven.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">Vue.js</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    Skal jeres website være interaktivt og tilbyde moderne
+                    features til jeres målgruppe, så er Vue.js et oplagt værktøj
+                    til hurtigt at opnå ny forretningsværdi og komme i mål med
+                    jeres løsninger. releese benytter derfor ofte denne
+                    teknologi til mindre/mellem projekter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">React.JS</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    Skal jeres website være interaktivt og tilbyde moderne
+                    features til jeres målgruppe, så er React.JS et oplagt
+                    værktøj til hurtigt at opnå ny forretningsværdi og komme i
+                    mål med jeres løsninger. React.JS egner sig perfekt til
+                    større projekter, hvor der løbende skal kunne udvides med
+                    komplekse funktionaliteter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">PHP</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    PHP har været brugt i mange år, særligt i Danmark. Derfor
+                    har releese naturligvis flere års erfaringer med at udvikle
+                    backendsystemer samt websites i PHP.
+                  </p>
+
+                  <p class="pt-2">
+                    Udover egenudviklede systemer, er mange af de store cloud
+                    e-commerce løsninger basseret på PHP og vi hjælper derfor
+                    gerne med videreudvikling af bla.a woocommer, wordpress og
+                    de fleste andre udbydere.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">Azure</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    <i>Availability and Responsiveness</i> er ligeså stor en del
+                    af moderne løsninger som selve funktionaliteten der bliver
+                    tilbudt. Derfor er releese eksperter i cloud opsætninger i
+                    Microsoft Azure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-slate-200 bg-slate-100 rounded select-none p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">Databaser</h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    releese er eksperter i dataarkitektur og opbygning. Vi har I
+                    mange år bygget relationelle databaser til alt fra små
+                    projekter til selve forretningers kerneapplikationer. Vi
+                    forstår vigtigheden i at have en sund datastruktur, der både
+                    kan give indsigt i forretningen og være fundamentet for den
+                    fremtidige merværdi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="py-4 hover:bg-emerald-200 bg-emerald-100 rounded p-4 lg:ml-4 xl:ml-4 2xl:ml-4 mb-4"
+            >
+              <div
+                data-menu
+                class="flex justify-between items-center cursor-pointer"
+              >
+                <h1 class="text-xl font-regular tracking-wide">
+                  Brug for en særlig teknologi?
+                </h1>
+                <button
+                  class="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded"
+                  role="button"
+                  aria-label="show or hide"
+                >
+                  <img
+                    class="transform"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
+                    alt="dropdown"
+                  />
+                  <img
+                    class="transform hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4dark.svg"
+                    alt="dropdown"
+                  />
+                </button>
+              </div>
+              <div
+                class="hidden pt-4 text-base leading-normal pr-12 mt-4"
+                id="sect"
+              >
+                <div class="leading-loose">
+                  <p>
+                    releese adapterer hele tiden nye teknologier i takt med de
+                    bliver udbredt. Derfor er vores udviklere rutineret i at
+                    lære og mestre nye teknologier. Så er den teknologi i ønsker
+                    eller allerede benytter ikke en af de ovenstående, så tøv
+                    ikke med at tag kontakt til os alligevel. Vi brænder for
+                    softwareudvikling, og vil naturligvis altid være klar til at
+                    imødekomme jeres behov.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
       id="tilgang"
-      class="bg-slate-100 leading-loose self-center grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 lg:gap-12 xl:gap-12 2xl:gap-12 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
+      class="bg-slate-50 leading-loose self-center grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 lg:gap-12 xl:gap-12 2xl:gap-12 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
     >
       <div class="col-span-3 pt-12 flex-col flex">
         <div class="text-left max-w-[1200px]">
@@ -288,7 +686,6 @@
 
       <div>
         <h1 class="text-xl font-regular tracking-wide">1. Kravsanalyse</h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
         <p class="text-sm font-regular tracking-wide">Typisk 1-4 uger</p>
       </div>
 
@@ -302,7 +699,6 @@
 
       <div>
         <h1 class="text-xl font-regular tracking-wide">2. Udarbejdelse</h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
         <p class="text-sm font-regular tracking-wide">Typisk 3-6 måneder</p>
       </div>
 
@@ -317,7 +713,6 @@
 
       <div>
         <h1 class="text-xl font-regular tracking-wide">3. Test</h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
         <p class="text-sm font-regular tracking-wide">Typisk 2-8 uger</p>
       </div>
 
@@ -333,7 +728,6 @@
         <h1 class="text-xl font-regular tracking-wide">
           4. Udgivelse og Drift
         </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
         <p class="text-sm font-regular tracking-wide">Typisk 2-6 uger</p>
       </div>
 
@@ -351,7 +745,7 @@
       <p
         class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none pb-12"
       >
-        Tidligere erfaring fra
+        E r f a r i n g
       </p>
       <div
         class="w-full grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 gap-12"
@@ -368,7 +762,7 @@
       </div>
     </div>
 
-    <div id="samarbejde" class="bg-slate-100 mb-32">
+    <div id="samarbejde" class="bg-slate-50 mb-32">
       <div
         class="leading-loose self-center grid grid-cols-1 lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-6 lg:gap-12 xl:gap-12 gap-8 2xl:gap-12 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
       >
@@ -399,7 +793,6 @@
           <h1 class="text-xl font-regular tracking-wide">
             Mange brikker - ét spil
           </h1>
-          <div class="bg-black h-0.5 w-12 my-4"></div>
           <p class="text-sm font-regular tracking-wide">
             En del af kravsanalysen
           </p>
@@ -415,7 +808,6 @@
 
         <div>
           <h1 class="text-xl font-regular tracking-wide">Check-ins</h1>
-          <div class="bg-black h-0.5 w-12 my-4"></div>
           <p class="text-sm font-regular tracking-wide">
             5-10 minutter dagligt
           </p>
@@ -433,7 +825,6 @@
           <h1 class="text-xl font-regular tracking-wide">
             14. dags planlægning
           </h1>
-          <div class="bg-black h-0.5 w-12 my-4"></div>
           <p class="text-sm font-regular tracking-wide">
             45-90 minutter hver 14. dag
           </p>
@@ -449,7 +840,6 @@
 
         <div>
           <h1 class="text-xl font-regular tracking-wide">Demo</h1>
-          <div class="bg-black h-0.5 w-12 my-4"></div>
           <p class="text-sm font-regular tracking-wide">
             45-90 minutter månedligt
           </p>
@@ -467,10 +857,10 @@
 
     <div
       id="kontakt"
-      class="px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 gap-8"
+      class="px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1"
     >
-      <img src="img/developer.jpg" />
-      <div class="leading-loose">
+      <img src="img/developer.jpg" class="lg:rounded-l-2xl xl:rounded-l-2xl 2xl:rounded-l-2xl" />
+      <div class="leading-loose bg-slate-200 pl-12 pt-12 lg:rounded-r-2xl xl:rounded-r-2xl 2xl:rounded-r-2xl pb-12">
         <h1 class="text-xl font-regular tracking-wide">
           Klar til at komme i gang?
         </h1>
@@ -484,15 +874,37 @@
 
         <a
           href="mailto:hey@releese.dk"
-          class="text-xl tracking-wider hover:text-slate-300 mt-12"
+          class="text-xl tracking-wider hover:text-slate-300 mt-12 border-b-2 border-white"
           >hey@releese.dk</a
         >
       </div>
     </div>
 
+    <div class="w-full h-16 bg-slate-900 flex items-center justify-start">
+      <a
+        class="m-4 text-white text-xl hover:opacity-60"
+        href="mailto:hey@releese.dk"
+        >© releese</a
+      >
+    </div>
+
     <script src="https://os.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      let elements = document.querySelectorAll("[data-menu]");
+      for (let i = 0; i < elements.length; i++) {
+        let main = elements[i];
+        main.addEventListener("click", function () {
+          let element = main.parentElement.parentElement;
+          let andicators = main.querySelectorAll("img");
+          let child = element.querySelector("#sect");
+          child.classList.toggle("hidden");
+          andicators[0].classList.toggle("rotate-180");
+        });
+      }
     </script>
   </body>
 </html>
