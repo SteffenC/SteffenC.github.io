@@ -60,23 +60,49 @@
       class="w-full md:p-0 lg:p-0 xl:p-0 2xl:p-o from-slate-900 to-slate-800"
     >
       <div
-        class="md:fixed lg:fixed xl:fixed 2xl:fixed z-50 w-full flex pl-12 pr-12 h-14 justify-between items-center bg-slate-900"
+        class="md:fixed lg:fixed xl:fixed 2xl:fixed z-50 w-full flex pl-12 pr-12 h-14 justify-between items-center opacity-80 bg-slate-900"
       >
         <h1 class="text-3xl text-slate-100 tracking-wider select-none">
           releese
         </h1>
 
-        <div class="lg:visible xl:visible 2xl:visible invisible">
-          <a
-            href="mailto:hey@releese.dk"
-            class="pr-6 text-xl text-slate-100 tracking-wider hover:text-slate-300"
-            >hey@releese.dk</a
-          >
+        <div class="flex">
+          <div class="lg:visible xl:visible 2xl:visible invisible">
+            <a
+              onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })"
+              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              >Services</a
+            >
+          </div>
+
+          <div class="lg:visible xl:visible 2xl:visible invisible">
+            <a
+              onclick="document.getElementById('tilgang').scrollIntoView({ behavior: 'smooth' })"
+              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              >Tilgang</a
+            >
+          </div>
+
+          <div class="lg:visible xl:visible 2xl:visible invisible">
+            <a
+              onclick="document.getElementById('samarbejde').scrollIntoView({ behavior: 'smooth' })"
+              class="pr-12 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              >Samarbejde</a
+            >
+          </div>
+
+          <div class="lg:visible xl:visible 2xl:visible invisible">
+            <a
+              onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' })"
+              class="pr-6 text-base font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
+              >Kontakt</a
+            >
+          </div>
         </div>
       </div>
 
       <div class="w-full h-5/6 bg-gradient-to-b">
-        <img class="h-5/6 w-full opacity-10 absolute" src="img/office.jpg" />
+        <img class="h-5/6 w-full opacity-90 absolute" src="img/office.jpg" />
         <div class="w-full h-1/4"></div>
 
         <div class="block lg:hidden xl:hidden 2xl:hidden">
@@ -92,15 +118,17 @@
           <div class="w-1/6 h-10"></div>
           <div class="z-20">
             <h2
-              class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-3xl font-medium max-w-[600px] leading-normal text-slate-100"
+              class="md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-3xl font-medium max-w-[600px] leading-normal text-slate-100 bg-slate-900 p-4 opacity-90"
             >
               Kom i mål med dine it-projekter
             </h2>
-            <p class="text-xl font-medium text-slate-100 mt-4">
+            <p
+              class="text-xl font-medium text-slate-100 mt-4 bg-slate-900 p-4 opacity-90"
+            >
               Få en software-, mobil-, eller webudvikler fra releese til at
               bygge din it-løsning
             </p>
-
+            <!-- 
             <div class="mt-12">
               <a
                 href="mailto:hey@releese.dk"
@@ -108,7 +136,7 @@
               >
                 Kontakt os
               </a>
-            </div>
+            </div> -->
           </div>
 
           <span class="hidden 2xl:block">
@@ -131,7 +159,10 @@
         </div>
       </div>
 
-      <div class="pt-12 pb-32 flex-col flex justify-center items-center">
+      <div
+        id="services"
+        class="pt-12 pb-32 flex-col flex justify-center items-center"
+      >
         <div class="text-center max-w-[1200px] lg:px-24 xl:px-24 2xl:px-24">
           <h1
             class="text-xl font-regular text-black tracking-wider select-none pb-12"
@@ -143,8 +174,8 @@
             class="text-xl xl:text-3xl 2xl:text-3xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
           >
             Vi kan hjælpe dig og din virksomhed igennem hele processen fra idé
-            til færdigt produkt. Sammen beskriver, designer og bygger vi den
-            løsning der passer til netop jeres behov.
+            til færdigt produkt. Sammen beskriver og bygger vi den løsning der
+            passer til netop jeres behov.
           </p>
         </div>
       </div>
@@ -161,7 +192,7 @@
 
         <p>
           Hos releese har vi stor erfaring med at bygge komplekse
-          domæne-specifkke forretningssystemer til alt fra ordrehåndtering,
+          domæne-specifikke forretningssystemer til alt fra ordrehåndtering,
           Customer Relationship Management (CRM) og Business Support Systems
           (BSS) til API'er der skal bruges til integrationer mellem systemer.
         </p>
@@ -174,8 +205,8 @@
           Vi kan hjælpe dig og din virksomhed med udvikling af mobil apps til
           både iOS og Android. Vi benytter os som oftest af såkaldte
           "cross-platform" teknologier, som gør det muligt for os at bygge til
-          begge systemer samtidigt. Dermed kan vi hurtigere få appen ud til dine
-          brugere.
+          begge systemer samtidigt. Dermed kan vi hurtigere få appen ud til
+          jeres brugere.
         </p>
       </div>
 
@@ -232,53 +263,28 @@
       </div>
     </div>
 
-    <div class="brands w-full overflow-scroll pb-32">
-      <span class="h-32 flex xl:justify-around 2xl:justify-around items-center">
-        <img
-          src="img/economic.png"
-          class="lg:h-12 xl:h-12 2xl:h-12 h-8 lg:mr-24 xl:mr-24 2xl:mr-24 ml-10 mr-10"
-        />
-        <img
-          src="img/fullrate.png"
-          class="lg:h-12 xl:h-12 2xl:h-12 h-8 lg:mr-24 xl:mr-24 2xl:mr-24 mr-10"
-        />
-        <img
-          src="img/airofit.png"
-          class="lg:h-12 xl:h-12 2xl:h-12 h-8 lg:mr-24 xl:mr-24 2xl:mr-24 mr-10"
-        />
-        <img
-          src="img/nuuday.png"
-          class="lg:h-14 xl:h-14 2xl:h-14 h-12 lg:mr-24 xl:mr-24 2xl:mr-24 mr-10"
-        />
-        <img src="img/yousee.png" class="lg:h-12 xl:h-12 2xl:h-12 mr-10 h-8" />
-      </span>
-    </div>
-
-    
-
     <div
-      class="leading-loose self-center grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 lg:gap-24 xl:gap-24 gap-8 2xl:gap-24 px-12 lg:px-32 xl:px-96 2xl:px-96 pb-32"
+      id="tilgang"
+      class="bg-slate-100 leading-loose self-center grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 lg:gap-12 xl:gap-12 2xl:gap-12 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
     >
+      <div class="col-span-3 pt-12 flex-col flex">
+        <div class="text-left max-w-[1200px]">
+          <h1
+            class="text-xl font-regular text-black tracking-wider select-none pb-12"
+          >
+            t i l g a n g
+          </h1>
 
-
-    <div class="col-span-2 pt-12 flex-col flex justify-center items-center">
-      <div class="text-left max-w-[1200px]">
-        <h1
-          class="text-xl font-regular text-black tracking-wider select-none pb-12"
-        >
-          t i l g a n g
-        </h1>
-
-        <p
-          class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
-        >
-          Med erfaring fra både start-ups og nogle af landets største
-          virksomheder, har vi dannet 4 overordnet trin til at sammen kunne
-          sikre jeres it-success. Men vigtigst af alt, er vores arbejdsmetode
-          som danner rammen for samarbejdet.
-        </p>
+          <p
+            class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
+          >
+            Med erfaring fra både start-ups og nogle af landets største
+            virksomheder, har vi dannet 4 overordnet trin til at sammen kunne
+            sikre jeres it-success. Men vigtigst af alt, er vores arbejdsmetode
+            som danner rammen for samarbejdet.
+          </p>
+        </div>
       </div>
-    </div>
 
       <div>
         <h1 class="text-xl font-regular tracking-wide">1. Kravsanalyse</h1>
@@ -286,7 +292,7 @@
         <p class="text-sm font-regular tracking-wide">Typisk 1-4 uger</p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose col-span-2">
         <p>
           Før vi kan begynde udviklingsprocessen, skal vi sammen beskrive de
           forventede krav og funktionaliteter så vi kommer bedst muligt fra
@@ -300,7 +306,7 @@
         <p class="text-sm font-regular tracking-wide">Typisk 3-6 måneder</p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose col-span-2">
         <p>
           Vi starter udviklingen og vil følge velkendte agile principper, som
           sikrer at I altid har overblik over den nuværende status. Dette sikrer
@@ -312,10 +318,10 @@
       <div>
         <h1 class="text-xl font-regular tracking-wide">3. Test</h1>
         <div class="bg-black h-0.5 w-12 my-4"></div>
-        <p class="text-sm font-regular tracking-wide">typisk 2-8 uger</p>
+        <p class="text-sm font-regular tracking-wide">Typisk 2-8 uger</p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose col-span-2">
         <p>
           På trods af den løbende test der sker under udarbejdelse af jeres
           løsning, vil der ofte være behov for en selvstændig test-fase når
@@ -328,10 +334,10 @@
           4. Udgivelse og Drift
         </h1>
         <div class="bg-black h-0.5 w-12 my-4"></div>
-        <p class="text-sm font-regular tracking-wide">typisk 2-6 uger</p>
+        <p class="text-sm font-regular tracking-wide">Typisk 2-6 uger</p>
       </div>
 
-      <div class="leading-loose">
+      <div class="leading-loose col-span-2">
         <p>
           Løsningen er nu klar til at komme i brug. Alt efter løsningens
           karakterer kan der være forskellige behov såsom eksterne godkendelser
@@ -341,35 +347,53 @@
       </div>
     </div>
 
-    <div class="bg-slate-100 mb-32">
-      
-
-      <div
-        class="leading-loose self-center grid lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 lg:gap-24 xl:gap-24 gap-8 2xl:gap-24 px-12 lg:px-32 xl:px-96 2xl:px-96 pb-32"
+    <div class="brands w-full pb-32 pt-12 px-12 lg:px-32 xl:px-32 2xl:px-32">
+      <p
+        class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none pb-12"
       >
-
-
-      <div class="pt-12 lg:col-span-4 xl:col-span-4 2xl:col-span-4 flex-col flex justify-center items-center">
-        <div class="text-left max-w-[1200px]">
-          <h1
-            class="text-xl font-regular text-black tracking-wider select-none pb-12"
-          >
-            s a m a r b e j d e
-          </h1>
-
-          <p
-            class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
-          >
-            releese arbejder efter processer basseret på agile principper og
-            bruger vores mange års praktisk erfaring til at tilegne
-            fremgangsmåden til jeres konkrete opgave. Vi kan imødekomme og
-            integrere i jeres nuværende arbejdsmetoder, eller vi kan styre
-            processen og sikre forankring, transparens, deltagelse og feedback
-            under hele forløbet. Her er nogle af de tiltag vi anbefaler.
-          </p>
-        </div>
+        Tidligere erfaring fra
+      </p>
+      <div
+        class="w-full grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 gap-12"
+      >
+        <img src="img/economic.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
+        <img src="img/fullrate.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
+        <img src="img/airofit.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
+        <img src="img/nuuday.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
+        <img src="img/yousee.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
+        <img
+          src="img/klimate.png"
+          class="lg:h-12 xl:h-12 2xl:h-12 h-8 grayscale"
+        />
       </div>
+    </div>
 
+    <div id="samarbejde" class="bg-slate-100 mb-32">
+      <div
+        class="leading-loose self-center grid grid-cols-1 lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-6 lg:gap-12 xl:gap-12 gap-8 2xl:gap-12 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
+      >
+        <div
+          class="col-span-2 lg:col-span-6 xl:col-span-6 2xl:col-span-6 pt-12 flex-col flex"
+        >
+          <div class="text-left max-w-[1200px]">
+            <h1
+              class="text-xl font-regular text-black tracking-wider select-none pb-12"
+            >
+              s a m a r b e j d e
+            </h1>
+
+            <p
+              class="text-xl font-medium leading-relaxed text-slate-900 tracking-wide select-none"
+            >
+              releese arbejder efter processer basseret på agile principper og
+              bruger vores mange års praktisk erfaring til at tilegne
+              fremgangsmåden til jeres konkrete opgave. Vi kan imødekomme og
+              integrere i jeres nuværende arbejdsmetoder, eller vi kan styre
+              processen og sikre forankring, transparens, deltagelse og feedback
+              under hele forløbet. Her er nogle af de tiltag vi anbefaler.
+            </p>
+          </div>
+        </div>
 
         <div>
           <h1 class="text-xl font-regular tracking-wide">
@@ -381,7 +405,7 @@
           </p>
         </div>
 
-        <div class="leading-loose">
+        <div class="leading-loose col-span-2">
           <p>
             Små detajler bliver hurtigt overset når man beskriver de store mål
             med it-løsninger. Derfor vil vi altid nedbryde projekter til
@@ -397,7 +421,7 @@
           </p>
         </div>
 
-        <div class="leading-loose">
+        <div class="leading-loose col-span-2">
           <p>
             Vi anbefaler et dagligt check-in mellem udviklerne og
             forretningsejeren. Det giver mulighed for hurtigere afklaring og
@@ -415,7 +439,7 @@
           </p>
         </div>
 
-        <div class="leading-loose">
+        <div class="leading-loose col-span-2">
           <p>
             Omstændigheder ændrer sig ofte. Derfor laver vi altid kun en
             detaljeret plan for 14 dage af gangen. Dette skaber fleksibilitet og
@@ -426,10 +450,12 @@
         <div>
           <h1 class="text-xl font-regular tracking-wide">Demo</h1>
           <div class="bg-black h-0.5 w-12 my-4"></div>
-          <p class="text-sm font-regular tracking-wide">45-90 minutter månedligt</p>
+          <p class="text-sm font-regular tracking-wide">
+            45-90 minutter månedligt
+          </p>
         </div>
 
-        <div class="leading-loose">
+        <div class="leading-loose col-span-2">
           <p>
             Selvom alle interessenter naturligvis vil have mulighed for at teste
             og se løsningen i takt med udarbejdelsen, så anbefaler vi en fælles
@@ -439,7 +465,11 @@
       </div>
     </div>
 
-    <div class="px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32">
+    <div
+      id="kontakt"
+      class="px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 gap-8"
+    >
+      <img src="img/developer.jpg" />
       <div class="leading-loose">
         <h1 class="text-xl font-regular tracking-wide">
           Klar til at komme i gang?
@@ -448,7 +478,7 @@
         <p class="max-w-[700px] pb-8">
           Vi tager glædeligt og gratis en snak om jeres behov og hvad vi kan
           tilbyde. Hos os er der ingen sælgere eller rekrutteringsfolk - du vil
-          altid komme i direkte dialog med en it-konsulent med erfaring med
+          altid komme i direkte dialog med en it-konsulent med erfaring indenfor
           projektledelse.
         </p>
 
