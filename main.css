@@ -19,3 +19,12 @@ h1 {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.monohigh {
+    font-family: "Ubuntu Condensed";
+    line-height: 10vh !important;
+}
+
+.mono {
+    font-family: "Ubuntu Condensed";
+}
