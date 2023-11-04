@@ -1335,6 +1335,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1385,6 +1389,10 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-2 {
@@ -1460,6 +1468,10 @@ video {
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -1515,6 +1527,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-emerald-200 {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
 }
 
 .text-emerald-400 {
