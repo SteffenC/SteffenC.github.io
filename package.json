@@ -4,7 +4,8 @@
   "description": "https://medium.com/geekculture/how-to-use-tailwind-css-on-static-html-with-bonus-at-the-end-679abccc3a34",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./main.css -o ./output.css --watch"
   },
   "repository": {
     "type": "git",

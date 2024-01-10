@@ -3,11 +3,15 @@
 @import 'tailwindcss/utilities';
 
 * {
-    font-family: 'Ubuntu';
+    font-family: 'Nunito Sans';
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, p {
+    color: #020617a1
 }
 
 .brands::-webkit-scrollbar {
@@ -27,4 +31,12 @@ h1 {
 
 .mono {
     font-family: "Ubuntu Condensed";
+}
+
+.high {
+    line-height: 7vh !important;
+}
+
+.hand {
+    font-family: "Just Another Hand";
 }

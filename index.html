@@ -1,15 +1,14 @@
 <html>
   <head>
-    <title>releese.dk</title>
+    <title>releese</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="small_logo.png" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="img/icon.png" />
+    <link href="main.css" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
       rel="stylesheet"
     />
 
@@ -55,443 +54,199 @@
     ></noscript>
     <!-- End of Statcounter Code -->
   </head>
-  <body>
-    <div
-      class="w-full md:p-0 lg:p-0 xl:p-0 2xl:p-o from-slate-900 to-slate-800"
-    >
+  <body class="bg-[#F6F6F6]">
+    <!-- Header -->
+
+    <div class="flex justify-center">
       <div
-        class="md:fixed lg:fixed xl:fixed 2xl:fixed z-50 w-full flex pl-12 pr-12 h-14 justify-between items-center opacity-80 bg-slate-900"
+        class="flex-row md:flex lg:flex xl:flex 2xl:flex justify-between px-4 py-4 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-5/6 w-full"
       >
-        <a
-          href="index.html"
-          class="text-3xl text-slate-100 tracking-wider select-none font-semibold"
-        >
-          releese
-        </a>
-
-        <div class="flex">
-          <div class="lg:block xl:block 2xl:block hidden">
-            <a
-              onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
-              >Services</a
+        <a href="index.html"> <img src="img/logo.png" class="h-16" /></a>
+        <div>
+          <nav
+            class="grid grid-cols-2 py-4 font-semibold justify-between text-md"
+          >
+            <a class="p-3 px-8 text-center hover:bg-[#ECEFF1] rounded" href="startup.html"
+              >Startup</a
             >
-          </div>
-
-          <div class="lg:block xl:block 2xl:block hidden">
-            <a
-              href="teknologier.html"
-              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
-              >Teknologier</a
+            <a class="p-3 px-8 text-center hover:bg-[#ECEFF1] rounded" href="foreninger.html"
+              >Foreninger</a
             >
-          </div>
-
-          <div class="lg:block xl:block 2xl:block hidden">
-            <a
-              href="tilgang.html"
-              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
-              >Tilgang</a
-            >
-          </div>
-
-          <div class="lg:block xl:block 2xl:block hidden">
-            <a
-              href="samarbejde.html"
-              class="pr-12 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
-              >Samarbejde</a
-            >
-          </div>
-
-          <div class="lg:block xl:block 2xl:block hidden">
-            <a
-              onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' })"
-              class="pr-6 text-sm font-regular text-slate-100 tracking-wider hover:text-slate-300 select-none cursor-pointer"
-              >Kontakt</a
-            >
-          </div>
+          </nav>
         </div>
       </div>
+    </div>
 
+    <!-- Hero -->
+
+    <div class="flex justify-center px-4 py-44 leading-loose">
+      <div class="text-center">
+        <h2 class="text-4xl pb-8 font-semibold">Mangler du en udvikler?</h2>
+        <p class="max-w-[900px] text-2xl font-light">
+          Få en freelance udvikler fra releese til at stå for udviklingen af din
+          hjemmeside, webshop, it system, mobil-app og meget meget mere!
+        </p>
+
+        <div class="flex justify-center p-12">
+          <a
+            href="mailto:hej@releese.dk"
+            class="rounded-full bg-[#1E293B] text-[#F6F6F6] hover:bg-[#0D9488] cursor-pointer w-[200px] py-2 px-4 font-bold"
+          >
+            hej@releese.dk
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="flex justify-center text-[#020617]">
       <div
-        class="w-full lg:h-5/6 h-1/3 xl:h-5/6 2xl:h-5/6 pattern-dots pattern-slate-100 pattern-bg-white pattern-opacity-100 pattern-size-12"
+        class="md:bg-[#ECEFF1] lg:bg-[#ECEFF1] xl:bg-[#ECEFF1] 2xl:bg-[#ECEFF1] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-5/6 w-full md:h-[500px] lg:h-[500px] xl:h-[500px] 2xl:h-[500px]"
       >
-        <img
-          class="h-5/6 w-full opacity-60 hidden absolute lg:block xl:block 2xl:block"
-          src="img/office.jpg"
-        />
-        <img
-          class="w-full h-1/3 absolute lg:hidden xl:hidden 2xl:hidden"
-          src="img/office.jpg"
-        />
-        <div class="w-full md:h-1/4 lg:h-1/4 xl:h-1/4 2xl:h-1/4"></div>
+        <div
+          class="flex justify-center self-center py-4 px-8 order-2 md:order-1 lg:order-1 xl:order-1 2xl:order-1"
+        >
+          <div class="py-12">
+            <h1 class="text-5xl text-[#020617]">Klimate</h1>
+            <h2 class="">MOBIL APP & BACKEND • 2022</h2>
 
-        <div class="flex h-1/3">
-          <div class="lg:w-1/6 xl:w-1/6 2xl:w-1/6"></div>
-          <div class="z-20">
-            <h2
-              class="md:text-7xl font-medium max-w-[600px] leading-normal text-white lg:text-7xl xl:text-7xl 2xl:text-7xl text-4xl bg-slate-900 p-4 opacity-90"
-            >
-              Kom i mål med dine it-projekter
-            </h2>
-            <p
-              class="text-xl font-medium text-white lg:mt-4 xl:mt-4 2xl:mt-4 bg-slate-900 p-4 opacity-90"
-            >
-              Få en software-, mobil-, eller webudvikler fra releese til at
-              bygge din it-løsning
+            <p class="text-[#020617] text-lg pt-6 pr-4 font-light">
+              Hos Klimate udviklede vi et internt administrationssystem samt en
+              kundeportal
             </p>
-            <!-- 
+
             <div class="mt-12">
               <a
-                href="mailto:hey@releese.dk"
-                class="bg-transparent jusitfy-end hover:bg-emerald-400 text-emerald-400 font-semibold hover:text-slate-100 py-2 px-4 border border-emerald-200 hover:border-transparent rounded"
+                href="klimate.html"
+                class="rounded-full bg-[#1E293B] text-[#F6F6F6] hover:bg-[#0D9488] cursor-pointer py-4 px-6 font-bold text-lg"
               >
-                Kontakt os
+                Læs mere
               </a>
-            </div> -->
+            </div>
           </div>
-
-          <span class="hidden 2xl:block">
-            <span
-              class="w-64 h-64 absolute left-2/3 opacity-90 bg-emerald-400"
-            ></span>
-            <span
-              class="w-64 h-64 absolute left-2/3 opacity-80 ml-20 mt-20 bg-emerald-200"
-            ></span>
-          </span>
-
-          <span class="hidden lg:block 2xl:hidden">
-            <span
-              class="w-32 h-32 absolute left-5/6 opacity-90 bg-emerald-400"
-            ></span>
-            <span
-              class="w-32 h-32 absolute left-5/6 opacity-80 ml-10 mt-10 bg-emerald-200"
-            ></span>
-          </span>
         </div>
-      </div>
-
-      <div
-        class="grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-0 pt-8 md:pt-0 ml:pt-0 xl:pt-0 2xl:pt-0"
-      >
-        <div>
-          <a
-            href="startup.html"
-            class="block border-[1px] border-r-[0.5px] text-slate-900 border-slate-200 p-8 hover:bg-slate-200 hover:cursor-pointer text-xl font-semibold text-center hover:tracking-[0.2em] transition-all duration-300"
-          >
-            Start-ups &#8250;
-          </a>
-        </div>
-        <div>
-          <a
-            href="virksomheder.html"
-            class="block border-[1px] border-l-0 border-t-0 border-r-[0.5px] text-slate-900 border-slate-200 p-8 hover:bg-slate-200 hover:cursor-pointer text-xl font-semibold text-center hover:tracking-[0.2em] transition-all duration-300"
-          >
-            Virksomheder &#8250;
-          </a>
-        </div>
-        <div>
-          <a
-            href="foreninger.html"
-            class="block border-[1px] border-l-0 border-t-0 border-r-[0.5px] text-slate-900 border-slate-200 p-8 hover:bg-slate-200 hover:cursor-pointer text-xl font-semibold text-center hover:tracking-[0.2em] transition-all duration-300"
-          >
-            Foreninger &#8250;
-          </a>
-        </div>
-      </div>
-
-      <div
-        id="services"
-        class="pt-32 pb-32 flex-col flex justify-center items-center"
-      >
-        <div class="text-center max-w-[1200px] lg:px-24 xl:px-24 2xl:px-24">
-          <h1
-            class="text-xl font-regular text-black tracking-wider select-none pb-12"
-          >
-            r e l e e s e
-          </h1>
-
-          <p
-            class="text-xl xl:text-3xl 2xl:text-3xl font-medium leading-relaxed text-slate-900 tracking-wide select-none px-4"
-          >
-            Du kan få en freelance udvikler fra releese til at stå for
-            udviklingen af din hjemmeside, webshop, it-system, mobil-app og
-            meget meget mere
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full flex justify-center"></div>
-
-    <div
-      class="grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8 px-12 lg:px-32 xl:px-32 2xl:px-32 pb-32"
-    >
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_Business_decisions_re_84ag.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">
-          Forretningsapplikationer
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Hold styr på jeres interne processer, ordrestyrring eller få et
-          hurtigt overblik over jeres kunde- eller medlemskartotek og gør det
-          muligt at automatisere jeres workflows. Mulighederne er mange med
-          it-systemer skræddersyet til netop jeres behov!
-        </p>
-
-        <p class="hidden">
-          Hos releese har vi stor erfaring med at bygge komplekse
-          domæne-specifikke forretningssystemer til alt fra ordrehåndtering,
-          Customer Relationship Management (CRM) og Business Support Systems
-          (BSS) til API'er der skal bruges til integrationer mellem systemer.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_my_app_re_gxtj.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">iOS/Android Apps</h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Forøg salg, besøgstal og arrangement fra dine kunder ved at være til
-          stede på den mest brugte platform. Få mulighed for at kommunikere mere
-          direkte og åbn op for nye kanaler til din målgruppe.
-        </p>
-
-        <p class="hidden">
-          Vi kan hjælpe dig og din virksomhed med udvikling af mobil apps til
-          både iOS og Android. Vi benytter os som oftest af såkaldte
-          "cross-platform" teknologier, som gør det muligt for os at bygge til
-          begge systemer samtidigt. Dermed kan vi hurtigere få appen ud til
-          jeres brugere.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_web_shopping_re_owap.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">
-          Websites & E-commerce
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Kom igang med onlinesalg af dine produkter og tilbyd dine kommende
-          kunder en professionel og lækker købsoplevelse med en ny eller
-          opdateret webshop. Undgå nedetid og slip for bøvlet med sikkerhed,
-          backup, plugins og opdateringer.
-        </p>
-
-        <p class="hidden">
-          Web apps og hjemmesider dækker over en bred vifte af løsninger. Alt
-          fra webshops, kampagne- og informations websites til mere avancerede
-          og skrædersyede administration og CMS systemer. Her kan vi både
-          integrere op i mod jeres eksisterende data og systemer eller sammen
-          bygge de nødvendige server og database systemer.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_Responsive_re_e1nn.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">
-          API'er & Integrationer
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Forbind jeres forretning og kom igang med at automatisere og skabe
-          overblik. Få mulighed for at integrerer og tilbyde tredjepartsservices
-          direkte eller gør det lettere for jer selv at arbejde med jeres egne
-          data når systemerne snakker sammen.
-        </p>
-
-        <p class="hidden">
-          Uanset om det er jeres egne data som skal udstilles som en API
-          service, eller at I ønsker at integrerer jeres nuværende løsning op
-          imod nye tjenester, så har releese mange års erfaring med både at
-          udvikle og anvende integrationer mellem systemer.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_visual_data_re_mxxo.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">
-          Dashboard & Data visualiseringer
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-        <p>
-          Med analyse- og trackingværktøjer kan I få værdifuld indsigt i jeres
-          egne data. Se hvordan jeres kunder opfører sig på sitet eller dyk ned
-          i udviklingen af nøgletal over tid.
-        </p>
-        <p class="hidden">
-          Få skræddersyet it-løsninger til at visualisere den data I som
-          virksomhed allerede ligger inde med, og få bygget værktøjer til at
-          strukturere og give indsigt i jeres egne data.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 rounded transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_Cloud_hosting_7xb1.png"
-        />
-        <h1 class="text-xl font-regular tracking-wide">Drift & Hosting</h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Slip for besværget med opdateringer, sikkerhed og alle de løbende
-          udfordringer der kan opstå når it-systemer ikke bliver vedligeholdt.
-          Og få derudover en fast kontakt I altid kan tage fat i når der sker
-          problemer eller det er tid til at ændre eller udvide.
-        </p>
-
-        <p class="hidden">
-          Hvad end vi sammen har bygget din nye it-løsning eller du søger nogen
-          der kan overtage ansvaret for vedligeholdelse, drift og hosting af
-          dine eksisterende løsninger; så hjælper releese gerne så vi sammen
-          finder en holdbar løsning.
-        </p>
-      </div>
-
-      <div class="leading-loose p-4 transition-all duration-300">
-        <img
-          class="md:h-40 lg:h-40 xl:h-40 2xl:h-40"
-          src="img/undraw_Developer_activity_re_39tg.png"
-        />
-
-        <h1 class="text-xl font-regular tracking-wide">
-          Øvrige udviklingsopgaver
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-
-        <p>
-          Bliv en del af et samarbejde med it-udviklere der ikke begrænser sig
-          til bestemte typer opgaver. Når din virksomhed, forening eller
-          start-up står med nye it-udfordrigner, så er vi klar til at hjælpe!
-        </p>
-
-        <p class="hidden">
-          Falder jeres opgaver en smule udenfor vores kategorier, så tøv ikke
-          med at tag kontakt til os alligevel. Vi brænder for softwareudvikling,
-          og vil naturligvis altid være klar til at imødekomme jeres behov.
-        </p>
-      </div>
-    </div>
-
-    <div
-      class="w-full bg-slate-800 grid gap-8 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 lg:px-32 xl:px-32 2xl:px-32 px-12 pt-20 pb-20"
-    >
-      <div class="text-white">
-        <h1 class="text-4xl pb-4">Mangler I en udvikler ?</h1>
-        <p
-          class="text-xl xl:text-xl 2xl:text-xl font-regular leading-relaxed tracking-wide"
+        <div
+          class="flex justify-center bg-[#0d94891c] order-1 md:order-2 lg:order-2 xl:order-2 2xl:order-2"
         >
-          Hos releese løser vi jeres udviklingsopgaver. <br />Tag kontakt i os
-          og kom igang allerede
-          <span class="text-emerald-200 font-bold">i dag</span> med at realisere
-          jeres it-projekter!
-        </p>
-      </div>
-      <div class="flex content-center items-center justify-center">
-        <a
-          class="text-black bg-white hover:bg-emerald-400 p-4 px-6 text-2xl rounded hover:tracking-[0.2em] transition-all duration-300"
-          href="mailto:hey@releese.dk"
-          >Kontakt &rarr;</a
-        >
+          <img
+            src="img/klimate-screenshot-2.png"
+            class="object-contain h-[425px] self-center"
+          />
+        </div>
       </div>
     </div>
 
-    <div
-      class="brands w-full pb-14 pt-14 px-12 lg:px-32 xl:px-32 2xl:px-32 bg-slate-50 border-b-2 border-slate-200"
-    >
+    <div class="flex justify-center pt-12 text-[#020617]">
       <div
-        class="w-full grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 grid-cols-2 gap-12"
+        class="md:bg-[#ECEFF1] lg:bg-[#ECEFF1] xl:bg-[#ECEFF1] 2xl:bg-[#ECEFF1] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-5/6 w-full md:h-[500px] lg:h-[500px] xl:h-[500px] 2xl:h-[500px]"
       >
-        <img src="img/economic.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
-        <img src="img/fullrate.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
-        <img src="img/airofit.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
-        <img src="img/nuuday.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
-        <img src="img/yousee.png" class="lg:h-12 xl:h-12 2xl:h-12 h-8" />
-        <img
-          src="img/klimate.png"
-          class="lg:h-12 xl:h-12 2xl:h-12 h-8 grayscale"
-        />
-      </div>
-    </div>
-
-    <div
-      id="kontakt"
-      class="px-12 pt-32 lg:px-32 xl:px-32 2xl:px-32 pb-32 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 grid-cols-1 pattern-dots pattern-slate-100 pattern-bg-white pattern-opacity-100 pattern-size-12"
-    >
-      <img src="img/undraw_Conversation_re_c26v.png" class="w-[600px]" />
-      <div
-        class="leading-loose pr-4 md:pl-0 lg:pl-12 xl:pl-12 2xl:pl-12 pt-12 lg:rounded-r-2xl xl:rounded-r-2xl 2xl:rounded-r-2xl pb-12 flex-row place-self-center"
-      >
-        <h1 class="text-xl font-regular tracking-wide">
-          Klar til at komme i gang?
-        </h1>
-        <div class="bg-black h-0.5 w-12 my-4"></div>
-        <p class="max-w-[700px] pb-8">
-          Vi tager glædeligt og gratis en snak om jeres behov og hvad vi kan
-          tilbyde. Hos os er der ingen sælgere eller rekrutteringsfolk - du vil
-          altid komme i direkte dialog med en it-konsulent med erfaring indenfor
-          projektledelse.
-        </p>
-
-        <a
-          href="mailto:hey@releese.dk"
-          class="text-xl hover:text-slate-500 mt-12 tracking-[0.2em] hover:tracking-[0.4em] transition-all duration-300"
-          >hey@releese.dk</a
+        <div
+          class="flex justify-center bg-gradient-to-t from-[#1E293B1c] to-[#1E293B1b]"
         >
+          <img
+            src="img/airofit-screenshot-2.png"
+            class="object-contain h-[425px] self-end"
+          />
+        </div>
+        <div class="flex justify-center self-center py-4 px-8">
+          <div class="py-12">
+            <h1 class="text-5xl text-[#020617]">Airofit</h1>
+            <h2 class="">MOBIL APP & BACKEND • 2021</h2>
+
+            <p class="text-[#020617] text-lg pt-6 pr-4">
+              Hos Airofit tog vi deres app til iOS og Android fra version 1.0
+              til 2.0 med nye træningsmuligheder og personaliserede programmer
+            </p>
+
+            <div class="mt-12">
+              <a
+                href="airofit.html"
+                class="rounded-full bg-[#1E293B] text-[#F6F6F6] hover:bg-[#0D9488] cursor-pointer py-4 px-6 font-bold text-lg"
+              >
+                Læs mere
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="w-full h-16 bg-slate-900 flex items-center justify-start">
-      <a
-        class="m-4 text-white text-xl hover:opacity-60"
-        href="mailto:hey@releese.dk"
-        >© releese</a
+    <div class="flex justify-center pt-12 text-[#020617]">
+      <div
+        class="md:bg-[#ECEFF1] lg:bg-[#ECEFF1] xl:bg-[#ECEFF1] 2xl:bg-[#ECEFF1] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-5/6 w-full md:h-[500px] lg:h-[500px] xl:h-[500px] 2xl:h-[500px]"
       >
+        <div
+          class="flex justify-center self-center py-4 px-8 order-2 md:order-1 lg:order-1 xl:order-1 2xl:order-1"
+        >
+          <div class="py-12">
+            <h1 class="text-5xl text-[#020617]">Fullrate</h1>
+            <h2 class="">MOBIL APP • 2019</h2>
+
+            <p class="text-[#020617] text-lg pt-6 pr-4 font-light">
+              Hos Fullrate gik vi fra designudkast til nr. 1 i app-store på 22
+              uger med 100% WiFi appen
+            </p>
+
+            <div class="mt-12">
+              <a
+                href="fullrate.html"
+                class="rounded-full bg-[#000000a1] text-[#F6F6F6] cursor-not-allowed py-4 px-6 font-bold text-lg"
+              >
+              <i>Kommer snart</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center order-1 md:order-2 lg:order-2 xl:order-2 2xl:order-2"
+        >
+          <img
+            src="img/full-screenshot-2.jpg"
+            class="object-cover h-[500px] self-center"
+          />
+        </div>
+      </div>
     </div>
 
-    <script src="https://os.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <div class="flex justify-center pt-24">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-5/6 w-full md:h-[500px] lg:h-[500px] xl:h-[500px] 2xl:h-[500px]"
+      >
+        <div class="flex justify-center">
+          <img src="img/icon.png" class="object-cover h-[250px] self-center" />
+        </div>
+        <div class="flex self-center py-4 px-8">
+          <div class="py-12">
+            <h1 class="text-5xl text-[#020617]">Skal vi arbejde sammen ?</h1>
+            <h2 class="text-[#020617] text-sm"></h2>
 
-    <script>
-      let elements = document.querySelectorAll("[data-menu]");
-      for (let i = 0; i < elements.length; i++) {
-        let main = elements[i];
-        main.addEventListener("click", function () {
-          let element = main.parentElement.parentElement;
-          let andicators = main.querySelectorAll("img");
-          let child = element.querySelector("#sect");
-          child.classList.toggle("hidden");
-          andicators[0].classList.toggle("rotate-180");
-        });
-      }
-    </script>
+            <p
+              class="text-[#020617] text-lg pt-6 pr-4 font-light max-w-[800px]"
+            >
+              Vi kan hjælpe dig og din virksomhed igennem hele processen fra idé
+              til færdigt produkt. Sammen beskriver, designer og bygger vi den
+              løsning der passer til netop jeres behov.
+            </p>
+
+            <div class="flex justify-start text-center pt-12">
+              <a
+                href="mailto:hej@releese.dk"
+                class="rounded-full bg-[#1E293B] text-[#F6F6F6] hover:bg-[#0D9488] cursor-pointer py-4 px-8 font-bold"
+              >
+                Send en mail til hej@releese.dk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div
+        class="border-[#ECEFF1] border-t-2 w-5/6 mt-12 py-8"
+      >
+        <a href="mailto:hej@releese.dk" class="">hej@releese.dk</a>
+      </div>
+    </div>
   </body>
 </html>
